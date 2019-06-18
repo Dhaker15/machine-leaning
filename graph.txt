@@ -1,0 +1,13 @@
+#!/user/bin/python3
+ 
+import matplotlib.pyplot as plt
+x=[2,3]
+y=[4,5]
+
+
+plt.xlabel("time")
+plt.ylabel("speed")
+plt.plot(x,y)
+plt.grid()
+plt.savefig("/home/ravi/Desktop/graph.png")
+
