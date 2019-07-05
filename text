@@ -1,0 +1,13 @@
+#!/usr/bin/python3
+
+import pytesseract
+
+from PIL import Image
+img=Image.open("sad.jpg")
+
+result=pytesseract.image_to_string(img)
+print(result)
+
+
+with open('IMAGE.txt','w+')  as f:
+    f.write(result)
