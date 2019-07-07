@@ -1,0 +1,13 @@
+#!/usr/bin/python3
+
+import pytesseract
+import cv2
+#from PIL import Image
+img=cv2.imread("sad.jpg",1)
+
+result=pytesseract.image_to_string(img)
+print(result)
+
+
+
+  
